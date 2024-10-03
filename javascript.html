@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        function mostrar() {
+           document.getElementById("informacion").innerHTML=" hola que tal";
+        }
+        function ocultar() {
+            document.getElementById("informacion").innerHTML=""
+        }
+        function logo() {
+            document.getElementById('imagen').src=""
+        }
+        function juego() {
+            document.getElementById('imagen').src=""
+        }
+    </script>
+</head>
+<body>
+    <h1>javascript</h1>
+    <h2>alerts</h2>
+    <p>al hacer click en el enlace se abre una ventana</p>
+    <a href="javascript:alert('hola')">click aquí</a>
+    <p>al hacer click, podemos llamar una funcion </p>
+    <button onclick="alert('has hecho click en el boon')">
+        hazme click
+    </button> </button>
+    <h2>cambiar contenido de la pagina </h2>
+    <p id="informacion"></p>
+    <button onclick="mostrar()">muestra de informacion</button>
+    <button onclick="ocultar()">ocultar info </button>
+    <h2>abrir una ventana nueva</h2>
+    <p>para ir a youtube hazclick <a href="javascript:window.open('https://www.youtube.com')"></a></p>
+    <h2>cambiar imagenes</h2>
+    <button onclick="logo()">logo</button>
+    <button onclick="juego()">juego</button>
+    <img id="imagen" src="" alt="">
+</body>
+</html>
